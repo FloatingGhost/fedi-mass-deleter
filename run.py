@@ -48,7 +48,7 @@ if __name__ == "__main__":
     while 1:
         time.sleep(0.1)
         print("-- Grabbing posts from {}".format(max_id))
-        posts = mastodon.account_statuses(my_id, max_id=max_id)
+        posts = mastodon.account_statuses(my_id, max_id=max_id, limit=100)
         max_id = posts[-1]["id"]
         print("--- {}".format(posts[-1]["created_at"]))
         if len(posts) == 0:

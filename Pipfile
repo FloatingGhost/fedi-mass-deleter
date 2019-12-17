@@ -6,10 +6,8 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-wordcloud = "*"
 mastodon-py = "*"
 pyaml = "*"
-bs4 = "*"
 tqdm = "*"
 
 [requires]
